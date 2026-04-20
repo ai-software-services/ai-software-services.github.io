@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Software Services</title>
+    <meta name="description" content="AI Software Services — Wir entwickeln praxisnahe KI-Lösungen, Automatisierungen und moderne Softwareprodukte." />
+    <link rel="icon" href="logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] } }
+      }
+    </script>
+  </head>
+
+  <body class="min-h-screen flex flex-col bg-[#0b0f1a] text-slate-100 antialiased">
+
+    <div class="flex-1">
+
+    <!-- LANG SWITCHER -->
+    <div class="flex justify-end max-w-4xl mx-auto px-6 pt-4">
+      <div class="flex gap-1 text-xs font-semibold">
+        <span class="text-white">DE</span>
+        <span class="text-slate-600">/</span>
+        <a href="index-en.html" class="text-slate-400 hover:text-white transition-colors">EN</a>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="mx-auto max-w-4xl px-6 pt-28 pb-20 sm:pt-40 sm:pb-32 text-center flex flex-col items-center gap-10">
+      <p class="text-xs font-medium uppercase tracking-[0.18em] text-slate-400">AI Cloud Services · Automatisierung · Integration</p>
+      <div class="flex items-center gap-4">
+        <img src="logo.png" alt="AI Software Services" class="h-20 w-20 rounded-lg object-contain shrink-0" />
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-left">AI Software Services</h1>
+      </div>
+      <p class="text-xl sm:text-2xl font-semibold leading-snug">
+        <span class="text-blue-400">Cloud Deployment.</span> <span class="text-slate-300">Local Integration.</span>
+      </p>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="mx-auto max-w-4xl px-6 pb-8">
+      <div class="rounded-2xl border border-white/10 bg-white/[0.03] px-8 py-10 sm:px-14 sm:py-14 text-center flex flex-col items-center">
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight mb-3">Schreiben Sie uns! 👋</h2>
+        <p class="text-slate-400 text-sm sm:text-base mb-6 max-w-sm">Wir freuen uns auf Ihre Nachricht und melden uns bei Ihnen.</p>
+        <a href="mailto:info@ai-software-services.de"
+          class="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-slate-900 hover:bg-slate-100 transition-colors">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+          info@ai-software-services.de
+        </a>
+      </div>
+    </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/[0.06] py-4">
+      <div class="mx-auto flex max-w-4xl flex-row items-center justify-between gap-3 px-6 text-xs text-slate-500">
+        <div class="flex items-center gap-2">
+          <span>© <span id="year"></span> AI Software Services</span>
+        </div>
+        <div class="flex gap-5">
+          <a href="impressum.html" class="hover:text-white transition-colors">Impressum</a>
+          <a href="mailto:info@ai-software-services.de" class="hover:text-white transition-colors">info@ai-software-services.de</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>
